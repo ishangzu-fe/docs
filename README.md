@@ -1,7 +1,6 @@
 # Ishangzu-FE 团队
 
-> 文档仓库
-
+> 文档仓库 https://ishangzu-fe.github.io/docs
 
 ## 故事
 
