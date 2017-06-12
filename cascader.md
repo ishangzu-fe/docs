@@ -141,7 +141,7 @@
 
 ## Events
 
-<table width="100%" cellspacing="0" cellpadding="0" border="1" style="border-collapse:collapse">
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="border-collapse:collapse；display:table;">
 	<thead>
 		<tr>
 			<th>事件名称</th>
