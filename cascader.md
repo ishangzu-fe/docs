@@ -2,6 +2,8 @@
 
 当一个数据集合有清晰的层级结构时，可通过级联选择器逐级查看并选择。(具体示例参见[element](http://element.eleme.io/#/zh-CN/component/cascader))
 
+!> tofu >= 0.3.7
+
 ## Attributes
 
 <table width="100%" cellspacing="0" cellpadding="0" border="1" style="border-collapse:collapse;display:table;">
