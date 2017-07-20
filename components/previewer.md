@@ -68,7 +68,7 @@ images: Array | Object {
 	<tbody>
 		<tr>
 			<td>images</td>
-			<td>Object | Array&gt;String&lt;</td>
+			<td>Object | Array&lt;String&gt;</td>
             <td>-</td>
 			<td>图片数组或参数</td>
 		</tr>
