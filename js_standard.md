@@ -34,11 +34,49 @@ rules: {
 
 !> 注释表示说明或错误的写法
 
+### 全局
+
+1.四格缩进，并且不允许混用 tab
+
+2.行尾必须添加分号
+
+3.字符串最外引号必须使用单引号
+
+4.任何地方都不允许存在多个空格
+
+5.空行不允许多于一行
+
+6.不允许使用包装对象
+
+~~~javascript
+// var stringObject = new String("Hello world");
+// var numberObject = new Number(33);
+// var booleanObject = new Boolean(false);
+~~~
+
+7.操作符前后必须添加空格
+
+8.一元操作符空格规则
+
+- 关键字后必须添加一个空格
+- 符号操作符与操作数之间不允许添加空格
+
+9.不允许重复使用 import
+
+~~~javascript
+// import { a1 } from 'a';
+// import { a2 } from 'a';
+import { a1, a2 } from 'a';
+~~~
+
+10.数组不允许有空槽
+
 ### 变量
 
 1. 使用单行单声明符来声明不赋值的变量
 2. 使用多行多声明符来声明赋值的变量
 3. 不允许使用 undefined
+4. 变量不允许重复声明
 
 ~~~javascript
 let a, b, c;
@@ -57,7 +95,7 @@ let c = 1;
 // let a = undefined;
 ~~~
 
-### 最佳实践
+### 语句
 
 1.块语句必须添加大括号
 
@@ -77,32 +115,14 @@ if (foo) {
 }
 ~~~
 
-2.switch 语句必须添加 default 声明
-
-3.不允许存在空函数
-
-4.不允许存在多个空格
-
-5.不允许使用包装对象
-
-~~~javascript
-// var stringObject = new String("Hello world");
-// var numberObject = new Number(33);
-// var booleanObject = new Boolean(false);
-~~~
-
-6.变量不允许重复声明
-
-### 风格
-
-1.单行块语句前后必须加空格
+2.单行块语句前后必须加空格
 
 ~~~javascript
 function foo() { return true; }
 // function foo() {return true;}
 ~~~
 
-2.采用以下括号风格
+3.采用以下括号风格
 
 ~~~javascript
 function foo() {        // function foo()
@@ -131,7 +151,7 @@ try {                   // try
                         // }
 ~~~
 
-3.逗号的风格
+4.逗号的风格
 - 逗号后空一格
 
 ~~~javascript
@@ -139,27 +159,11 @@ try {                   // try
 function foo (a, b, c) {}
 ~~~
 
-4.计算属性前后不允许使用空格
+5.switch 语句必须添加 default 声明
 
-~~~javascript
-const a = 'a';
-const obj = {
-    [a]: 1
-    // [ a ]: 1
-}
-~~~
+### 对象
 
-5.文件最后空一行
-
-6.函数调用左括号前不允许添加空格
-
-~~~javascript
-foo(); // foo ();
-~~~
-
-7.四格缩进，且不允许混用 tab
-
-8.对象键名冒号后必须添加一个空格
+1.对象键名冒号后必须添加一个空格
 
 ~~~javascript
 call({
@@ -173,17 +177,13 @@ call({
 // });
 ~~~
 
-9.单行小于 120 字符
-
-10.空行不允许多于一行
-
-11.对象属性调用不允许添加空格
+2.对象属性调用不允许添加空格
 
 ~~~javascript
 // foo. bar .baz . quz
 ~~~
 
-12.对象括号换行规则 - 若换则换，不换则已
+3.对象括号换行规则 - 若换则换，不换则已
 
 ~~~javascript
 let a = {};
@@ -194,68 +194,39 @@ let e = {
 };
 ~~~
 
-13.函数中变量声明规则如上
-
-14.字符串最外引号必须使用单引号
-
-15.行尾必须添加分号
-
-16.函数参数声明括号前不允许添加空格
-
-17.一元操作符空格规则
-- 关键字后必须添加一个空格
-- 符号操作符与操作数之间不允许添加空格
+4.计算属性前后不允许使用空格
 
 ~~~javascript
-let a = {};
-let b = { foo: 1 };
-let e = {
-    foo: 1,
-    bar: 2
-};
-~~~
-
-18.块语句前必须添加空格
-
-~~~javascript
-function a() {}
-
-try {} catch(a) {}
-
-class Foo {
-  constructor() {}
+const a = 'a';
+const obj = {
+    [a]: 1
+    // [ a ]: 1
 }
 ~~~
 
-19.操作符前后必须添加空格
+### 函数
 
-### ES6
+1.函数调用左括号前不允许添加空格
 
-1.箭头前后添加空格
+~~~javascript
+foo(); // foo ();
+~~~
 
-2.generator函数 * 号前不允许空格，后必须空一格
+2.函数中变量声明规则如上
+
+3.不允许重复声明函数
+
+4.函数参数声明括号前不允许添加空格
+
+5.箭头前后添加空格
+
+6.generator函数 * 号前不允许空格，后必须空一格
 
 ~~~javascript
 function* foo() {}
 ~~~
 
-3.不允许给 const 声明的变量再次赋值
-
-4.不允许重复使用 import
-
-~~~javascript
-// import { a1 } from 'a';
-// import { a2 } from 'a';
-import { a1, a2 } from 'a';
-~~~
-
-### 可能发生错误的情况
-
-1.不允许重复声明函数
-
-2.数组不允许有空槽
-
-3.不允许有多余的不可能执行的语句
+5.函数中不允许有多余的不会执行的语句
 
 ### 其他规则
 
