@@ -48,12 +48,20 @@ tofu server [-p|--port <port>]
 
 ~~~bash
 tofu build
+
+# 不压缩
+tofu build [-C|--no-compress]
+# 压缩后删除 dist
+tofu build [-d|--delete]
 ~~~
 
 ### update
 
 ~~~bash
 tofu update
+
+# 更新模板，i-tofu 和 tofu-cli
+tofu update [-a|--all]
 ~~~
 
 ### lint
