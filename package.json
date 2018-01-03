@@ -1,0 +1,14 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "> 文档仓库 https://ishangzu-fe.github.io/docs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "./node_modules/.bin/docsify serve ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docsify-cli": "^4.1.12"
+  }
+}
