@@ -10,6 +10,7 @@
 			- [cascader](/components/cascader.md)
             - [popup](/components/popup.md)
             - [context-menu](/components/context-menu.md)
+            - [dropdown-tree](/components/dropdown-tree.md)
         - 业务组件
             - [图片放大器](/components/previewer.md)
             - [表格字段筛选器](/components/field_filter.md)
