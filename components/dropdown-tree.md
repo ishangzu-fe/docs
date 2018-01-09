@@ -65,7 +65,7 @@ methods: {
 }
 
 mounted() {
-    this.tree = this.$refs.tree.getTree(); // 获取树实例
+    this.tree = this.$refs.tree; // 获取树实例
 }
 ~~~
 
@@ -87,7 +87,7 @@ mounted() {
 			<td>dropdown 的尺寸</td>
 			<td>string</td>
 			<td>——</td>
-			<td>small</td>
+			<td>--</td>
 		</tr>
         <tr>
 			<td>placeholder</td>
@@ -101,7 +101,7 @@ mounted() {
 			<td>输入框显示的信息</td>
 			<td>string</td>
 			<td>——</td>
-			<td>——</td>
+			<td>选中节点标签名</td>
 		</tr>
         <tr>
 			<td>data</td>
