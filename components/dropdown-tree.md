@@ -15,7 +15,8 @@
     placeholder="请输入占位字符"
     :title="treeTitle"
     :data="treeData"
-    :dict="treeDict"
+	:dict="treeDict"
+	:radio="true"
     :showCounter="false"
     :checkChildren="false"
     :checkedNodes="checkedNodesOnInit"
@@ -115,6 +116,13 @@ mounted() {
 			<td>Object</td>
 			<td>——</td>
 			<td>——</td>
+		</tr>
+		<tr>
+			<td>radio</td>
+			<td>单选模式</td>
+			<td>Boolean</td>
+			<td>true/false</td>
+			<td>false</td>
 		</tr>
         <tr>
 			<td>showCounter</td>
