@@ -16,7 +16,7 @@
     :title="treeTitle"
     :data="treeData"
 	:dict="treeDict"
-	:radio="true"
+	:multiple="true"
     :showCounter="false"
     :checkChildren="false"
     :checkedNodes="checkedNodesOnInit"
@@ -118,11 +118,11 @@ mounted() {
 			<td>——</td>
 		</tr>
 		<tr>
-			<td>radio</td>
-			<td>单选模式</td>
+			<td>multiple</td>
+			<td>多选/单选</td>
 			<td>Boolean</td>
 			<td>true/false</td>
-			<td>false</td>
+			<td>true</td>
 		</tr>
         <tr>
 			<td>showCounter</td>
