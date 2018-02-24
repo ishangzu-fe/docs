@@ -4,25 +4,23 @@
 
 此组件基于 popup 组件制作。（参见[popup](/popup))
 
-!> tofu >= 0.3.8
+!> tofu >= 1.0.0-beta.16
 
 ## 用法
 
 参考示例：
 
 ~~~javascript
-<i-field-filter :items="items" @change="handleChange"></i-field-filter>
+<i-field-filter v-model="fields"></i-field-filter>
 
 data () {
     return {
-        items: ['a', 'b', 'c']
-    }
-}
-
-methods: {
-    handleChange (selected) {
-        // 初始时默认勾选所有字段
-        // default return ['a', 'b', 'c']
+        fields: {
+			a: {
+				label: 'a',
+				checked: true
+			}
+		}
     }
 }
 ~~~
@@ -41,30 +39,22 @@ methods: {
 	</thead>
 	<tbody>
 		<tr>
-			<td>items</td>
-			<td>需要筛选的字段数组</td>
-			<td>array</td>
+			<td>v-model</td>
+			<td>筛选字段对象</td>
+			<td>Object</td>
 			<td>——</td>
 			<td>——</td>
 		</tr>
 	</tbody>
 </table>
 
-## Events
+## Filtered Field Object
 
-<table width="100%" cellspacing="0" cellpadding="0" border="1" style="border-collapse: collapse;display: table;text-align: center;">
-	<thead>
-		<tr>
-			<th>事件</th>
-			<th>说明</th>
-			<th>回调参数</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>change</td>
-			<td>当选中的字段值发生变化时触发的事件</td>
-			<td>选中的字段数组</td>
-		</tr>
-	</tbody>
-</table>
+~~~javascript
+{
+	fieldName: {
+		label,
+		checked
+	}
+}
+~~~
