@@ -55,7 +55,7 @@
 需要注意的是：
 1. 请按照提示完成每项任务
 2. Windows 版本打包过程必须在 windows 系统（或虚拟机）中进行
-3. 全局安装 <code>npm install -g asar</code>，切记!切记!切记!
+3. 全局安装 <code>npm install -g asar</code>，切记! 切记! 切记! 重要的事情说三遍
 4. electron-builder 下载相关依赖会遇到网络问题，解决办法请参考 https://github.com/electron-userland/electron-builder/issues/1859
 5. 打包时需下载指定的 Electron 版本，也有可能遇到网络问题，可以自己下载对应的 Electron 版本（[下载地址](https://npm.taobao.org/mirrors/electron/1.7.8/)）并放到各系统的默认缓存目录中，例如，MacOS 缓存目录是：`~/Library/Caches/electron` 。具体可参考：https://github.com/electron-userland/electron-download
 6. Windows 下 exe 格式的安装包用到的配置文件，放置在 `bin/exeConfigs` 文件夹下，包含不同版本的安装包配置文件。打包的话，在系统中安装好 InnoSetup 之后，打开不同版本对应的配置文件，点击构建按钮即可。
