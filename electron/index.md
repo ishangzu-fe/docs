@@ -59,7 +59,7 @@
 4. electron-builder 下载相关依赖会遇到网络问题，解决办法请参考`https://github.com/electron-userland/electron-builder/issues/1859`
 5. 打包时需下载指定的 Electron 版本，也有可能遇到网络问题，可以自己下载对应的 Electron 版本（[下载地址](https://npm.taobao.org/mirrors/electron/1.7.8/)）并放到各系统的默认缓存目录中，例如，MacOS 缓存目录是：`~/Library/Caches/electron` 。具体可参考：`https://github.com/electron-userland/electron-download`
 6. Windows 下 exe 格式的安装包用到的配置文件，放置在 `bin/exeConfigs` 文件夹下，包含不同版本的安装包配置文件。打包的话，在系统中安装好 InnoSetup 之后，打开不同版本对应的配置文件，点击构建按钮即可。
-7. electron-pdf-window.zip 需要覆盖本地的，不然打包会有问题（本目录可以下载，记得改 package.json 的用户路径）
+7. electron-pdf-window.zip 需要覆盖本地的，不然打包会有问题 <b>记得改 package.json 的用户路径</b>([下载地址](https://github.com/ishangzu-fe/docs/blob/master/electron/electron-pdf-window.zip))
 
 #### MacOS 证书
 创建 MacOS 的安装包时需要进行代码签名，这时需要自己生成并安装证书，具体方法可参考：[MAS: Requesting certificates · nwjs/nw.js Wiki · GitHub](https://github.com/nwjs/nw.js/wiki/MAS%3A-Requesting-certificates)
