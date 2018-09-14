@@ -2,6 +2,8 @@
 
 > Simple CLI for scaffolding Vue.js projects
 
+> tofu-cli 下载以后，需要到 tofu-cli 的 node_modules 里把webpack-hot-middleware 降级为 2.22.2
+
 ## 核心
 
 简单易用当然是我的目标之一，准确来说，我希望给开发者们提供一个“无压”的开发环境。
